@@ -43,7 +43,7 @@ class Contacts extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="contact_page">
 				<h1 style={style.title}>{this.props.title || this.state.title}</h1>
 				<form onSubmit={this.handleSubmit.bind(this)}>
 				<input required={true} style={{

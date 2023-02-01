@@ -259,7 +259,7 @@ img {
 }
 
 @media (max-width: 540px) {
-  .products_page, .add_main_div, .edit_page {
+  .products_page, .add_main_div, .edit_page, .contact_page {
     padding-bottom: 25%;
   }
 }
