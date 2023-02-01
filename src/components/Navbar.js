@@ -14,7 +14,7 @@ state = {
 
   handleClick = e => {
     localStorage.clear();
-    window.location = '/login';
+    window.location = '/';
     this.props.history.push('/');
   }
   
