@@ -172,7 +172,7 @@ img {
 .add_main_div {
   padding-top: 2%;
 }
-.add_main_div input, .description {
+.add_main_div input, .description, .edit_page input {
   width: 15em;
 }
 
@@ -259,7 +259,7 @@ img {
 }
 
 @media (max-width: 540px) {
-  .products_page, .add_main_div {
+  .products_page, .add_main_div, .edit_page {
     padding-bottom: 25%;
   }
 }
@@ -311,7 +311,7 @@ img {
   .add_main_div h2 {
     font-size: 22px;
   }
-  .add_main_div input, .description {
+  .add_main_div input, .description, .edit_page input {
     width: 13em;
   }
   .add_main_div input {

@@ -69,42 +69,42 @@ class EditProduct extends Component {
         </div>
         <form onSubmit={this.handleSubmit} style={{textAlign: "center"}}>
           <ul style={{listStyle: "none"}}>
-            <li className="add-product">Item name: <input 
+            <li className="add-product">Name: <input
               className="input"
               placeholder="item name"
               name="name"
               value={this.state.name}
               onChange={this.handleChange}
             /></li>
-            <li>Image URL: <input 
-              className="input"
+            <li>ImageURL: <input
+              className="input-img"
               placeholder="image URL"
               name="imgURL"
               value={this.state.imgURL}
               onChange={this.handleChange}
             /></li>
-            <li>Item description: <textarea 
+            <li>Description: <textarea
               className="description"
               placeholder="description"
               name="description"
               value={this.state.description}
               onChange={this.handleChange}
             /></li>
-            <li>Item price: <input 
+            <li>Price: <input
               className="input"
               placeholder="price"
               name="price"
               value={this.state.price}
               onChange={this.handleChange}
             /></li>
-            <li>Item stock: <input 
+            <li>Stock: <input
               className="input"
               placeholder="stock"
               name="stock"
               value={this.state.stock}
               onChange={this.handleChange}
             /></li>
-            <li>Item SKU: <input 
+            <li>SKU: <input
               className="input"
               placeholder="SKU"
               name="SKU"
