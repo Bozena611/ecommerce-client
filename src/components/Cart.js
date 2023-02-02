@@ -138,7 +138,7 @@ const style={
     marginLeft: '1em',
     marginBottom: '6em',
     marginTop: '2em',
-    backgroundColor: 'grey',
+    backgroundColor: 'lightgrey',
     height: '3em',
     width: '6em'
   },

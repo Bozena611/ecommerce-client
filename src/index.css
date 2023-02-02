@@ -68,6 +68,10 @@ img {
   border: 1px solid black;
 }
 
+.home_page img {
+  border: none;
+}
+
 .intro {
   padding-left: 5%;
   padding-right: 5%;
@@ -238,6 +242,9 @@ img {
 .message {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+}
+button {
+  border: 1px solid grey;
 }
 
 /* ============== MEDIA QUERIES ================= */
