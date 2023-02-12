@@ -34,7 +34,7 @@ const Login = (props) => {
     	console.log(error)
     }
 	}
-	 
+
 	return (
 		<div className="login_page" style={{textAlign: "center"}}>
 			<h2 style={style.title}>Login</h2>

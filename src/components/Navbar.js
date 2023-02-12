@@ -7,17 +7,17 @@ export default class Navbar extends React.Component {
 
 state = {
     //user_id: localStorage.getItem('user_id')
-    
+
   }
 
 //const {user_id} = localStorage.getItem('user_id');
 
   handleClick = e => {
     localStorage.clear();
-    window.location = '/';
+    window.location = '/login';
     this.props.history.push('/');
   }
-  
+
 
   render() {
   //const loggedIn = this.props.login;
