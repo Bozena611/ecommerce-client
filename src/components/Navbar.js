@@ -1,8 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import "../index.css";
 
-export default class Navbar extends React.Component {
+class Navbar extends React.Component {
 
 
 state = {
@@ -14,8 +14,8 @@ state = {
 
   handleClick = e => {
     localStorage.clear();
-    window.location = '/login';
-    /*this.props.history.push('/login');*/
+    /*window.location = '/login';*/
+    this.props.history.push('/login');
   }
 
 
@@ -96,6 +96,7 @@ state = {
     );
   }
 }
+
 let activeStyle = {
   color: "white",
   display: "block",
@@ -104,3 +105,4 @@ let activeStyle = {
 };
 
 
+export default withRouter(Navbar);
