@@ -51,7 +51,8 @@ class Cart extends Component {
 					});
 	 	 		//alert('Product removed, please choose another one or go back to your cart!');
 			/*	window.location = '/cart';*/
-	 	 		window.location.reload();
+	 	 		/*window.location.reload();*/
+	 	 		this.showCartItems();
 	 	} catch (error) {
 		    console.log(error);
 		  }
@@ -65,8 +66,9 @@ class Cart extends Component {
           user_id: user_id
         });
       //alert('Cart cleared, you can choose another product.');
-      window.location = '/cart';
+      /*window.location = '/cart';*/
 			//window.location.reload(); //reloads the page
+			this.showCartItems();
     } catch (error) {
       	console.log(error);
     	}
