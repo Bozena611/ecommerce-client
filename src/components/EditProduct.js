@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import baseURL from "../baseURL";
+import { withRouter } from "react-router-dom";
 
 class EditProduct extends Component {
 
@@ -21,7 +22,7 @@ class EditProduct extends Component {
     axios
       .get(`${baseURL}/products/product_id/`+this.props.match.params.id)
       .then(res => {
-        
+
         this.setState({
           name: res.data.name,
           imgURL: res.data.imgURL,
@@ -58,7 +59,8 @@ class EditProduct extends Component {
       console.log(e);
     }
     alert('Product updated!');
-    window.location = '/products';
+    /*window.location = '/products';*/
+    this.props.history.push('/products');
   }
 
   render () {
@@ -122,7 +124,7 @@ class EditProduct extends Component {
   }
 }
 
-export default EditProduct;
+export default withRouter(EditProduct);
 
 const style={
   title: {

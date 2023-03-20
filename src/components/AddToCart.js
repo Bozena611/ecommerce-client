@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import baseURL from "../baseURL";
 import axios from 'axios';
+import { withRouter } from "react-router-dom";
 
 class AddToCart extends Component {
 
@@ -34,8 +35,8 @@ class AddToCart extends Component {
 			console.log(e);
 		}
 		//alert('Product added to cart!');
-		window.location = '/cart';
-		/*this.props.history.push('/cart');*/
+		/*window.location = '/cart';*/
+		this.props.history.push('/cart');
 	}
 
 	render () {
@@ -49,7 +50,7 @@ class AddToCart extends Component {
 	}
 }
 
-export default AddToCart;
+export default withRouter(AddToCart);
 
 const style={
 	link: {

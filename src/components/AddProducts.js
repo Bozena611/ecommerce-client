@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import baseURL from "../baseURL";
+import { withRouter } from "react-router-dom";
 
 class AddProduct extends Component {
 
@@ -42,10 +43,10 @@ class AddProduct extends Component {
 			console.log(e);
 		}
 		alert('Product added');
-		window.location = '/products';
+		/*window.location = '/products';*/
+		this.props.history.push('/products');
 	};
 
-	
 	render () {
 		return (
 				<div className="add_main_div">
@@ -54,7 +55,7 @@ class AddProduct extends Component {
 					</div>
 					<form onSubmit={this.handleSubmit} style={{textAlign: "center"}}>
 					<ul style={{listStyle: "none"}}>
-						<li className="add-product">Name: <input 
+						<li className="add-product">Name: <input
 							className="input"
 							placeholder="name"
 							name="name"
@@ -62,13 +63,13 @@ class AddProduct extends Component {
 							onChange={this.handleChange}
 						/></li>
 						<li>ImageURL: <input
-							className="input-img" 
+							className="input-img"
 							placeholder="http://i.imgur.com/I86rTVl.jpg"
 							name="imgURL"
 							value={this.state.imgURL}
 							onChange={this.handleChange}
 						/></li>
-						<li>Description: <textarea 
+						<li>Description: <textarea
 							className="description"
 							style={{topMargin: "1em"}}
 							placeholder="description"
@@ -76,28 +77,27 @@ class AddProduct extends Component {
 							value={this.state.description}
 							onChange={this.handleChange}
 						/></li>
-						<li>Price: <input 
+						<li>Price: <input
 							className="input"
 							placeholder="price"
 							name="price"
 							value={this.state.price}
 							onChange={this.handleChange}
 						/></li>
-						<li>Stock: <input 
+						<li>Stock: <input
 							className="input"
 							placeholder="stock"
 							name="stock"
 							value={this.state.stock}
 							onChange={this.handleChange}
 						/></li>
-						<li>SKU: <input 
+						<li>SKU: <input
 							className="input"
 							placeholder="SKU"
 							name="SKU"
 							value={this.state.SKU}
 							onChange={this.handleChange}
 						/></li>
-											
 					</ul>
 					<div style={{textAlign: "center"}}>
 						<button className="primary">Add product</button>
@@ -110,7 +110,7 @@ class AddProduct extends Component {
 }
 
 
-export default AddProduct;
+export default withRouter(AddProduct);
 
 
 const style={
