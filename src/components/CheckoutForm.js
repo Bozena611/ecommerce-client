@@ -8,9 +8,10 @@ import {
 } from "react-stripe-elements";
 import baseURL from "../baseURL";
 import axios from "axios";
+import { withRouter } from "react-router-dom";
 
 class CheckoutForm extends Component {
-  
+
   state = {
     errorMessage: "",
     cardNumber: false,
@@ -49,7 +50,8 @@ class CheckoutForm extends Component {
       const res = await axios.post(`${baseURL}/cart/clear`, {
         user_id: user_id
       });
-      window.location = '/cart';
+      /*window.location = '/cart';*/
+      this.props.history.push('/cart');
     } else {
       alert("Stripe.js hasn't loaded yet.");
     }
@@ -130,7 +132,7 @@ class CheckoutForm extends Component {
   }
 }
 
-export default injectStripe(CheckoutForm);
+export default withRouter(injectStripe(CheckoutForm));
 
 const style={
   title: {
