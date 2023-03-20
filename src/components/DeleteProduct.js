@@ -5,7 +5,6 @@ import axios from 'axios';
 import '../index.css';
 
 class DeleteProduct extends React.Component {
-	
 
 async removeProduct () {
 	try {
@@ -13,10 +12,10 @@ async removeProduct () {
 			await axios.delete(url + this.props.match.params.id);
 			console.log('success');
 			//this.setState({message: 'Product deleted.'});
-			
+
     } catch (error) {
     	console.log(error);
-       		//this.setState({error:'Something went wrong'})      
+       		//this.setState({error:'Something went wrong'})
       }
     }
 
@@ -26,16 +25,15 @@ render () {
 			<div style={{textAlign: "center"}}>
 			<h3 style={style.text}>Product deleted</h3>
 				<Link  to={`/products`}>
-					<button onClick={this.removeProduct()} style={style.delete}>
+					<button onClick={()=> this.removeProduct()} style={style.delete}>
 						Back to Products
 					</button>
 				</Link>
-			
 			</div>
 		);
 	}
 
-  }  
+  }
 
 export default DeleteProduct;
 

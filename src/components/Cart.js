@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 
 class Cart extends Component {
-	
+
 		state = {
 			products: [],
 			cartProducts: [],
@@ -15,7 +15,7 @@ class Cart extends Component {
 			isLoading: true,
 			error: null
 		};
-	
+
 	componentDidMount() {
 		this.showCartItems();
 	}
@@ -32,7 +32,6 @@ class Cart extends Component {
 			this.setState({error, isLoading: false });
 		}
 	}
-
 
 	async removeFromCart (product_id) {
 	 	try {
@@ -51,13 +50,13 @@ class Cart extends Component {
 						cartProducts: response.data
 					});
 	 	 		//alert('Product removed, please choose another one or go back to your cart!');
-				window.location = '/cart';
+			/*	window.location = '/cart';*/
+	 	 		window.location.reload();
 	 	} catch (error) {
 		    console.log(error);
 		  }
 	}
- 	 		
-	
+
   async clearCart () {
     try {
       const url = `${baseURL}/cart/clear`;

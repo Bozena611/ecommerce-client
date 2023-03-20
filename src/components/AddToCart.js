@@ -25,7 +25,7 @@ class AddToCart extends Component {
 		try {
 			const response = await axios.post(`${baseURL}/cart/add`, {
 				user_id:user_id,
-				product_id:product_id, 
+				product_id:product_id,
 				quantity:quantity
 				})
 				//if (response.data.ok) return setTimeout(()=> {this.props.history.push('/products')}, 1000);
@@ -35,6 +35,7 @@ class AddToCart extends Component {
 		}
 		//alert('Product added to cart!');
 		window.location = '/cart';
+		/*this.props.history.push('/cart');*/
 	}
 
 	render () {

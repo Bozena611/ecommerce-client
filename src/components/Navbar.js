@@ -15,7 +15,7 @@ state = {
   handleClick = e => {
     localStorage.clear();
     window.location = '/login';
-    this.props.history.push('/');
+    /*this.props.history.push('/login');*/
   }
 
 
@@ -77,7 +77,7 @@ state = {
         </>
         )
         :
-        (  
+        (
         <>
         <li>
           <NavLink exact to="/login" style={{color: "white"}} activeStyle={activeStyle}>
