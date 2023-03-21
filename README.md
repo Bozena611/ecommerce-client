@@ -13,4 +13,4 @@ An eCommerce web application, created with MERN stack. Serves as admin portal wh
 * expiration date: any date in the future
 * cvc code: any code
 
-## Deployed version on Digital Ocean: https://ecommerce-bozena611.onrender.com/
+### Deployed version on Digital Ocean: https://ecommerce-bozena611.onrender.com/
