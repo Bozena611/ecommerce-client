@@ -14,7 +14,7 @@ class Footer extends React.Component {
 					</div>
 					<div className="footer_flex">
 						<div>
-							<p>Copyright &copy; 2019 -  <a style={style.link} href="https://www.inovationpark.com/about-2/team/" rel="noopener noreferrer" target="_blank"> Bozena Vuckovic</a></p>
+							<p>Copyright &copy; 2019 -  <a style={style.link} href="https://www.linkedin.com/in/bozenavuckovic" rel="noopener noreferrer" target="_blank"> Bozena Vuckovic</a></p>
 						</div>
 						<div>
 							<p>Final Project For - <a style={style.link} href="https://barcelonacodeschool.com/" rel="noopener noreferrer" target="_blank">Barcelona Code School</a></p>

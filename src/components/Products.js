@@ -33,17 +33,19 @@ class Productos extends Component {
 			<React.Fragment>
 				<div className="products_page">
 					<h1 style={style.title}>Our Projects</h1>
-					<div className = 'mainContainer'>
+					<div className ="mainContainer">
 						{!isLoading ? (
 							products.map(product =>{
 								const { _id, name, imgURL, description, price } = product;
 								return (
 									<div key={_id}>
 										<Link to={`/product/${product._id}`}>
+											<div className="product_div">
 											<h3>{name}</h3>
 											<img style={style.image} src= {imgURL} alt='product'/>
 											<div>
 												<h4 style={style.details}>Price: €{price}</h4>
+											</div>
 											</div>
 										</Link>
 									</div>

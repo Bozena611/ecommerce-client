@@ -35,7 +35,7 @@ class AddToCart extends Component {
 			console.log(e);
 		}
 		//alert('Product added to cart!');
-		/*window.location = '/cart';*/
+		/*window.location = '/cart'; doesn't work on deployed version, using withRouter instead*/
 		this.props.history.push('/cart');
 	}
 
