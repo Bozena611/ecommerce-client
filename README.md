@@ -1,6 +1,11 @@
 # Description
 
-An eCommerce web application, created with MERN stack. Serves as admin portal which allows CRUD operations after login. The admin can register, login, add new products, edit or delete an existing product, or Add an existing product to cart. Within the shopping cart the admin can proceed to payment (using Stripe) or clear cart. The app also allows deleting separate products from the cart.
+Frontend side for the eCommerce web application, created with MERN stack. Serves as admin portal which allows CRUD operations after login. The admin can register, login, add new products, edit or delete an existing product, or Add an existing product to cart. Within the shopping cart the admin can proceed to payment (using Stripe) or clear cart. The app also allows deleting separate products from the cart.
+
+## Backend repository:
+
+* https://github.com/Bozena611/e-commerce-server-cyclic
+
 
 ## Test Login:
 * Username: test2@test2.com
@@ -13,4 +18,6 @@ An eCommerce web application, created with MERN stack. Serves as admin portal wh
 * expiration date: any date in the future
 * cvc code: any code
 
-### Deployed version: https://ecommerce-bozena611.onrender.com/
+## Deployed version:
+
+* https://ecommerce-bozena611.onrender.com/
